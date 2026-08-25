@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -215,21 +215,21 @@
                 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-4 p-lg-5 rounded-4 shadow-lg h-100 text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                         <i class="fas fa-server text-white opacity-50 fs-1 mb-3"></i>
-                        <h3 class="fw-bolder text-white display-5 mb-2">50+</h3>
+                        <h3 class="fw-bolder text-white display-5 mb-2"><span class="counter" data-target="50">0</span>+</h3>
                         <p class="text-white opacity-75 fw-bold text-uppercase small letter-spacing-1 mb-0">Global Data Centers</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-4 p-lg-5 rounded-4 shadow-lg h-100 text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                         <i class="fas fa-globe text-white opacity-50 fs-1 mb-3"></i>
-                        <h3 class="fw-bolder text-white display-5 mb-2">120+</h3>
+                        <h3 class="fw-bolder text-white display-5 mb-2"><span class="counter" data-target="120">0</span>+</h3>
                         <p class="text-white opacity-75 fw-bold text-uppercase small letter-spacing-1 mb-0">Countries Served</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="p-4 p-lg-5 rounded-4 shadow-lg h-100 text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                         <i class="fas fa-shield-alt text-white opacity-50 fs-1 mb-3"></i>
-                        <h3 class="fw-bolder text-white display-5 mb-2">99.9%</h3>
+                        <h3 class="fw-bolder text-white display-5 mb-2"><span class="counter" data-target="99">0</span>.9%</h3>
                         <p class="text-white opacity-75 fw-bold text-uppercase small letter-spacing-1 mb-0">Guaranteed Uptime</p>
                     </div>
                 </div>
@@ -246,7 +246,7 @@
                         <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.2)); color: var(--primary-color);">
                             <i class="fas fa-globe fs-3"></i>
                         </div>
-                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">500+</h2>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);"><span class="counter" data-target="500">0</span>+</h2>
                         <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Clients Worldwide</p>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                         <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(244, 63, 94, 0.1), rgba(244, 63, 94, 0.2)); color: var(--secondary-color);">
                             <i class="fas fa-layer-group fs-3"></i>
                         </div>
-                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">1.2K</h2>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);"><span class="counter" data-target="1200">0</span>+</h2>
                         <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Projects Completed</p>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                         <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.2)); color: var(--primary-color);">
                             <i class="fas fa-star fs-3"></i>
                         </div>
-                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">99%</h2>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);"><span class="counter" data-target="99">0</span>%</h2>
                         <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Client Satisfaction</p>
                     </div>
                 </div>
@@ -676,8 +676,52 @@
     
 
     <script src="assets/js/main.js"></script>
+    <!-- Animated Counter JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            
+            const runCounter = (counter) => {
+                if (counter.classList.contains('counted')) return;
+                counter.classList.add('counted');
+                
+                const target = +counter.getAttribute('data-target');
+                const speed = 100;
+                
+                const updateCount = () => {
+                    const current = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target; 
+                    }
+                };
+                updateCount();
+            };
+            
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        runCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
 </body>
 </html>
+
+
 
 
 

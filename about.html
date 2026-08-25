@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
     <!-- Section 2: Our Story (With Animated Counters) -->
     <section class="py-5 bg-white position-relative overflow-hidden">
         <div class="position-absolute top-50 start-0 translate-middle-y rounded-circle d-none d-lg-block" style="width: 600px; height: 600px; background: rgba(139, 92, 246, 0.05); filter: blur(80px); z-index: 0;"></div>
-        <div class="container position-relative z-1 py-5">
+        <div class="container position-relative z-1">
             <div class="row align-items-center g-5">
                 <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="position-relative">
@@ -71,7 +71,7 @@
                             <h3 class="fw-bolder mb-1" style="font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--secondary-color);"><span class="counter" data-target="30">0</span>+</h3>
                             <span class="text-muted fw-bold text-uppercase small" style="letter-spacing: 1px;">Countries</span>
                         </div>
-                        <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="col-12 col-md-4">
                             <h3 class="fw-bolder mb-1" style="font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--dark);"><span class="counter" data-target="1200">0</span>+</h3>
                             <span class="text-muted fw-bold text-uppercase small" style="letter-spacing: 1px;">Projects</span>
                         </div>
@@ -83,7 +83,7 @@
 
     <!-- Section 3: Global Recognition (Awards) -->
     <section class="py-5 position-relative overflow-hidden" style="background: var(--light-bg);">
-        <div class="container py-5">
+        <div class="container">
             <div class="section-title text-center mb-5" data-aos="fade-up">
                 <div class="d-inline-block mb-3">
                     <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">RECOGNITION</span>
@@ -126,7 +126,7 @@
 
     <!-- Section 4: Core Values -->
     <section class="py-5 bg-white position-relative border-top border-bottom">
-        <div class="container py-5">
+        <div class="container">
             <div class="section-title text-center mb-5" data-aos="fade-up">
                 <div class="d-inline-block mb-3">
                     <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">THE STACKLY WAY</span>
@@ -169,7 +169,7 @@
 
     <!-- Section 5: Corporate Culture (NEW SECTION) -->
     <section class="py-5 position-relative overflow-hidden" style="background: var(--light-bg);">
-        <div class="container py-5">
+        <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-12 col-lg-5" data-aos="fade-right">
                     <div class="d-inline-block mb-3">
@@ -202,7 +202,7 @@
 
     <!-- Section 6: Team Preview -->
     <section class="py-5 bg-white position-relative overflow-hidden border-top">
-        <div class="container py-5">
+        <div class="container">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-end mb-5" data-aos="fade-up">
                 <div class="text-center text-md-start mb-4 mb-md-0">
                     <div class="d-inline-block mb-3">
@@ -269,55 +269,103 @@
         </div>
     </section>
 
-    <!-- Section 7: Global Partners (NEW SECTION) -->
-    <section class="py-5 position-relative overflow-hidden" style="background: var(--light-bg);">
-        <div class="container py-5 text-center">
+    <!-- Section 7: Global Partners (Infinite Marquee) -->
+    <section class="py-5 position-relative overflow-hidden" style="background: var(--dark-bg); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <!-- Background Orbs for dark section -->
+        <div class="position-absolute top-50 start-0 translate-middle-y rounded-circle" style="width: 400px; height: 400px; background: var(--primary-color); filter: blur(150px); opacity: 0.15; z-index: 0;"></div>
+        
+        <div class="container text-center position-relative z-1 py-4">
             <div class="d-inline-block mb-3" data-aos="fade-up">
-                <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">GLOBAL PARTNERS</span>
+                <span class="badge rounded-pill fw-bold px-3 py-2 text-white shadow-sm" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">GLOBAL PARTNERS</span>
             </div>
-            <h2 class="fw-bold mb-5 lh-sm" data-aos="fade-up" style="font-size: clamp(2rem, 5vw, 3rem);">Trusted by Industry <span class="text-gradient">Leaders</span></h2>
+            <h2 class="fw-bold mb-5 lh-sm text-white" data-aos="fade-up" style="font-size: clamp(2rem, 5vw, 3rem);">Trusted by Industry <span class="text-gradient">Leaders</span></h2>
+        </div>
+
+        <!-- Infinite CSS Marquee -->
+        <div class="marquee-wrapper position-relative z-1 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <!-- Left & Right Gradient Fades to blend the edges -->
+            <div class="position-absolute top-0 start-0 h-100 z-2 pointer-events-none" style="background: linear-gradient(to right, var(--dark-bg) 0%, transparent 100%); width: 100px;"></div>
+            <div class="position-absolute top-0 end-0 h-100 z-2 pointer-events-none" style="background: linear-gradient(to left, var(--dark-bg) 0%, transparent 100%); width: 100px;"></div>
             
-            <div class="row g-4 align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="p-4 bg-white rounded-4 shadow-sm border client-logo-card">
-                        <i class="fab fa-amazon fs-1 text-dark logo-icon"></i>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="p-4 bg-white rounded-4 shadow-sm border client-logo-card">
-                        <i class="fab fa-microsoft fs-1 text-dark logo-icon"></i>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="p-4 bg-white rounded-4 shadow-sm border client-logo-card">
-                        <i class="fab fa-apple fs-1 text-dark logo-icon"></i>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="p-4 bg-white rounded-4 shadow-sm border client-logo-card">
-                        <i class="fab fa-google fs-1 text-dark logo-icon"></i>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="p-4 bg-white rounded-4 shadow-sm border client-logo-card">
-                        <i class="fab fa-ibm fs-1 text-dark logo-icon"></i>
-                    </div>
-                </div>
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="marquee-item"><i class="fab fa-amazon"></i></div>
+                <div class="marquee-item"><i class="fab fa-microsoft"></i></div>
+                <div class="marquee-item"><i class="fab fa-apple"></i></div>
+                <div class="marquee-item"><i class="fab fa-google"></i></div>
+                <div class="marquee-item"><i class="fab fa-stripe"></i></div>
+                <div class="marquee-item"><i class="fab fa-meta"></i></div>
+                <div class="marquee-item"><i class="fab fa-spotify"></i></div>
+                <div class="marquee-item"><i class="fab fa-salesforce"></i></div>
+                <div class="marquee-item"><i class="fab fa-slack"></i></div>
+                <!-- Group 2 (Duplicate for seamless loop) -->
+                <div class="marquee-item"><i class="fab fa-amazon"></i></div>
+                <div class="marquee-item"><i class="fab fa-microsoft"></i></div>
+                <div class="marquee-item"><i class="fab fa-apple"></i></div>
+                <div class="marquee-item"><i class="fab fa-google"></i></div>
+                <div class="marquee-item"><i class="fab fa-stripe"></i></div>
+                <div class="marquee-item"><i class="fab fa-meta"></i></div>
+                <div class="marquee-item"><i class="fab fa-spotify"></i></div>
+                <div class="marquee-item"><i class="fab fa-salesforce"></i></div>
+                <div class="marquee-item"><i class="fab fa-slack"></i></div>
             </div>
         </div>
     </section>
     
     <style>
-        .client-logo-card { transition: all 0.3s ease; filter: grayscale(100%) opacity(60%); cursor: pointer; }
-        .client-logo-card:hover { transform: translateY(-5px); filter: grayscale(0%) opacity(100%); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; border-color: var(--primary-color) !important; }
-        .client-logo-card:hover .logo-icon { color: var(--primary-color) !important; }
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: scrollMarquee 25s linear infinite;
+        }
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+        .marquee-item {
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            color: white;
+            opacity: 0.4;
+            transition: all 0.3s ease;
+            margin: 0 15px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        .marquee-item:hover {
+            opacity: 1;
+            color: var(--primary-color);
+            transform: scale(1.1);
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 10px 20px rgba(139,92,246,0.2);
+            border-color: rgba(139,92,246,0.3);
+        }
+        @keyframes scrollMarquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @media (max-width: 768px) {
+            .marquee-item { width: 120px; font-size: 2.5rem; }
+        }
+        .pointer-events-none { pointer-events: none; }
     </style>
 
     <!-- Section 8: Call to Action -->
     <section class="position-relative overflow-hidden py-5" style="background: var(--dark-bg);">
         <div class="position-absolute top-0 start-0 w-100 h-100 z-0" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); opacity: 0.8;"></div>
         
-        <div class="container position-relative z-3 py-5 text-center" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="container position-relative z-3 text-center" data-aos="zoom-in" data-aos-duration="1000">
             <div class="p-5 rounded-4 shadow-lg mx-auto" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2); max-width: 900px;">
                 <h2 class="fw-bolder mb-4 text-white lh-sm" style="font-size: clamp(2rem, 5vw, 3.5rem);">Ready to deeply transform <br class="d-none d-md-block"> your corporate business?</h2>
                 <p class="mb-5 text-light opacity-75 mx-auto fs-5 lh-lg" style="max-width: 650px;">Join the hundreds of Fortune 500 companies that completely trust Stackly to drive their digital and operational success to the next level.</p>
@@ -381,3 +429,4 @@
     </script>
 </body>
 </html>
+

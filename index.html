@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly - Modern Corporate Business</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Section 1: Navbar Placeholder -->
+    <div id="header-placeholder"></div>
+    <!-- Section 2: Hero Slider (Swiper) -->
+    <section class="hero-section">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container text-center position-relative z-3">
+                        <div class="hero-content mx-auto" style="max-width: 1000px;">
+                            <span class="badge bg-white text-dark bg-opacity-75 rounded-pill px-4 py-2 mb-4 fw-bold shadow-sm" style="backdrop-filter: blur(10px);" data-aos="fade-down" data-aos-duration="1000">NEXT GENERATION ENTERPRISE</span>
+                            <h1 class="display-2 fw-bolder text-white mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                Architecting the <span class="text-gradient">Future</span> of Global Ecosystems
+                            </h1>
+                            <p class="lead text-light opacity-75 mb-5 mx-auto" style="max-width: 750px; font-size: 1.4rem;" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                We engineer scalable, intelligent platforms designed to elevate industry leaders and redefine digital transformation.
+                            </p>
+                            <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <a href="services.html" class="btn-custom me-3 px-5 py-3 fs-5 shadow-lg">Explore Core Solutions</a>
+                                <a href="about.html" class="btn-outline-custom text-white border-white px-5 py-3 fs-5">Who We Are</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container text-center position-relative z-3">
+                        <div class="hero-content mx-auto" style="max-width: 1000px;">
+                            <span class="badge bg-white text-dark bg-opacity-75 rounded-pill px-4 py-2 mb-4 fw-bold shadow-sm" style="backdrop-filter: blur(10px);" data-aos="fade-down" data-aos-duration="1000">DATA-DRIVEN SUCCESS</span>
+                            <h1 class="display-2 fw-bolder text-white mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                Accelerate Growth with <span class="text-gradient">Advanced Analytics</span>
+                            </h1>
+                            <p class="lead text-light opacity-75 mb-5 mx-auto" style="max-width: 750px; font-size: 1.4rem;" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                Leverage machine learning, deep insights, and modern tech stacks to effortlessly outperform your competition.
+                            </p>
+                            <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <a href="contact.html" class="btn-custom px-5 py-3 fs-5 shadow-lg">Book a Strategy Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next" data-aos="fade-left" data-aos-delay="1000"></div>
+            <div class="swiper-button-prev" data-aos="fade-right" data-aos-delay="1000"></div>
+            <div class="swiper-pagination" data-aos="fade-up" data-aos-delay="1000"></div>
+        </div>
+    </section>
+
+    <!-- Section 3: About Snippet -->
+    <section class="py-5 bg-light-alt position-relative overflow-hidden">
+        <!-- Decorative bg glow -->
+        <div class="position-absolute top-50 end-0 translate-middle-y rounded-circle d-none d-lg-block" style="width: 600px; height: 600px; background: var(--secondary-color); filter: blur(150px); opacity: 0.1; z-index: 0;"></div>
+        
+        <div class="container position-relative z-1">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="position-relative">
+                        <!-- Glowing background blob behind image -->
+                        <div class="position-absolute top-0 start-0 translate-middle rounded-circle" style="width: 250px; height: 250px; background: var(--primary-color); filter: blur(80px); opacity: 0.3; z-index: 0;"></div>
+                        
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="About Us" class="img-fluid rounded-4 shadow-lg position-relative z-1" style="border: 1px solid rgba(255,255,255,0.5);">
+                        
+                        <!-- Experience Card (Glassmorphism - visible and responsive on all devices) -->
+                        <div class="position-absolute bottom-0 end-0 p-3 p-md-4 rounded-4 shadow-lg m-2 m-md-4 z-2" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.8); max-width: 200px;">
+                            <div class="d-flex align-items-center">
+                                <h3 class="text-gradient fw-bold mb-0 me-2 fs-1">15+</h3>
+                                <p class="text-dark fw-bold mb-0 lh-sm small">Years of<br>Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <div class="d-inline-block mb-3">
+                        <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">WHO WE ARE</span>
+                    </div>
+                    <h2 class="fw-bold mb-4 fs-1 lh-sm text-dark">Empowering businesses through <span class="text-gradient">innovation</span></h2>
+                    <p class="text-muted mb-4 fs-6 lh-lg">We are a global business consulting and technology firm dedicated to helping organizations build their future. We seamlessly merge strategic thinking with cutting-edge technical excellence.</p>
+                    
+                    <div class="d-flex flex-column gap-3 mb-5">
+                        <div class="d-flex align-items-center p-3 rounded-4 shadow-sm" style="background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(139,92,246,0.1);">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle text-white me-3 shadow-sm flex-shrink-0" style="width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1 text-dark">Strategic Business Consulting</h6>
+                                <p class="text-muted small mb-0">Reinventing core business models for the future.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center p-3 rounded-4 shadow-sm" style="background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(139,92,246,0.1);">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle text-white me-3 shadow-sm flex-shrink-0" style="width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1 text-dark">Digital Transformation</h6>
+                                <p class="text-muted small mb-0">Seamlessly upgrading enterprise tech stacks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="about.html" class="btn-custom rounded-pill px-5">Discover Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Features / Services -->
+    <section class="py-5 bg-white position-relative">
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <div class="d-inline-block mb-3">
+                    <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">WHAT WE DO</span>
+                </div>
+                <h2 class="display-5 fw-bold mb-3">Our <span class="text-gradient">Core Services</span></h2>
+                <p class="text-muted fs-6 mx-auto" style="max-width: 600px;">Comprehensive solutions engineered to elevate your business operations and drive sustainable, long-term growth.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4 class="fw-bold mb-3">Business Strategy</h4>
+                        <p class="text-muted flex-grow-1">Data-driven strategies designed to help you navigate complex market dynamics, optimize workflows, and achieve your goals.</p>
+                        <div class="mt-4 pt-3 border-top" style="border-color: rgba(0,0,0,0.05) !important;">
+                            <a href="services.html" class="text-primary fw-bold text-decoration-none small text-uppercase" style="letter-spacing: 1px;">Learn More <i class="fas fa-arrow-right ms-2 transition-transform"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Highlighted Center Card -->
+                    <div class="feature-card h-100 d-flex flex-column" style="transform: translateY(-15px); box-shadow: 0 20px 50px -10px rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.3);">
+                        <div class="feature-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; box-shadow: 0 10px 20px -5px rgba(139, 92, 246, 0.4);"><i class="fas fa-laptop-code"></i></div>
+                        <h4 class="fw-bold mb-3">Digital Solutions</h4>
+                        <p class="text-muted flex-grow-1">Custom software, enterprise platforms, and digital tools tailored specifically to streamline your corporate infrastructure.</p>
+                        <div class="mt-4 pt-3 border-top" style="border-color: rgba(0,0,0,0.05) !important;">
+                            <a href="services.html" class="text-primary fw-bold text-decoration-none small text-uppercase" style="letter-spacing: 1px;">Learn More <i class="fas fa-arrow-right ms-2 transition-transform"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4 class="fw-bold mb-3">Cybersecurity</h4>
+                        <p class="text-muted flex-grow-1">Enterprise-grade security protocols and risk assessment to protect your valuable corporate data from emerging threats.</p>
+                        <div class="mt-4 pt-3 border-top" style="border-color: rgba(0,0,0,0.05) !important;">
+                            <a href="services.html" class="text-primary fw-bold text-decoration-none small text-uppercase" style="letter-spacing: 1px;">Learn More <i class="fas fa-arrow-right ms-2 transition-transform"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3" data-aos="fade-up" data-aos-delay="400">
+                <a href="services.html" class="btn-outline-custom rounded-pill px-5">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Global Network Infrastructure -->
+    <section class="position-relative overflow-hidden py-5" style="min-height: 80vh; display: flex; align-items: center;">
+        <!-- High-End Dark Tech Background Image with Gradient Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 z-0" style="background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 z-0" style="background: linear-gradient(135deg, rgba(9, 9, 11, 0.95) 0%, rgba(139, 92, 246, 0.4) 100%); backdrop-filter: blur(3px);"></div>
+        
+        <!-- Glowing Ambient Orbs -->
+        <div class="position-absolute top-0 start-0 translate-middle rounded-circle" style="width: 500px; height: 500px; background: var(--primary-color); filter: blur(150px); opacity: 0.3; z-index: 1;"></div>
+        <div class="position-absolute bottom-0 end-0 translate-middle rounded-circle" style="width: 400px; height: 400px; background: var(--secondary-color); filter: blur(150px); opacity: 0.2; z-index: 1;"></div>
+
+        <div class="container position-relative z-3">
+            <div class="row mb-5">
+                <div class="col-12 col-md-10 col-lg-8 mx-auto text-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <span class="badge rounded-pill fw-bold px-4 py-2 mb-4 text-white shadow-lg" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); letter-spacing: 2px;">GLOBAL REACH</span>
+                    
+                    <h2 class="fw-bolder text-white mb-4 lh-sm" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">
+                        Enterprise-Grade <br class="d-none d-md-block"> <span class="text-gradient">Infrastructure</span>
+                    </h2>
+                    
+                    <p class="text-light opacity-75 mb-0 mx-auto fs-5 lh-lg" style="max-width: 700px;">
+                        Our interconnected corporate systems ensure seamless, high-speed operations across borders. We leverage advanced cloud architecture for absolute security and maximum uptime.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Global Network Stats -->
+            <div class="row g-4 justify-content-center mt-2">
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 p-lg-5 rounded-4 shadow-lg h-100 text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fas fa-server text-white opacity-50 fs-1 mb-3"></i>
+                        <h3 class="fw-bolder text-white display-5 mb-2">50+</h3>
+                        <p class="text-white opacity-75 fw-bold text-uppercase small letter-spacing-1 mb-0">Global Data Centers</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 p-lg-5 rounded-4 shadow-lg h-100 text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fas fa-globe text-white opacity-50 fs-1 mb-3"></i>
+                        <h3 class="fw-bolder text-white display-5 mb-2">120+</h3>
+                        <p class="text-white opacity-75 fw-bold text-uppercase small letter-spacing-1 mb-0">Countries Served</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 p-lg-5 rounded-4 shadow-lg h-100 text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fas fa-shield-alt text-white opacity-50 fs-1 mb-3"></i>
+                        <h3 class="fw-bolder text-white display-5 mb-2">99.9%</h3>
+                        <p class="text-white opacity-75 fw-bold text-uppercase small letter-spacing-1 mb-0">Guaranteed Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Statistics -->
+    <section class="py-5 bg-light-alt position-relative z-1">
+        <div class="container position-relative z-2">
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card hover-primary p-4 p-lg-5 rounded-4 bg-white h-100 text-center" style="border: 1px solid rgba(139, 92, 246, 0.1);">
+                        <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.2)); color: var(--primary-color);">
+                            <i class="fas fa-globe fs-3"></i>
+                        </div>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">500+</h2>
+                        <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Clients Worldwide</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card hover-secondary p-4 p-lg-5 rounded-4 bg-white h-100 text-center" style="border: 1px solid rgba(139, 92, 246, 0.1);">
+                        <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(244, 63, 94, 0.1), rgba(244, 63, 94, 0.2)); color: var(--secondary-color);">
+                            <i class="fas fa-layer-group fs-3"></i>
+                        </div>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">1.2K</h2>
+                        <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card hover-primary p-4 p-lg-5 rounded-4 bg-white h-100 text-center" style="border: 1px solid rgba(139, 92, 246, 0.1);">
+                        <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.2)); color: var(--primary-color);">
+                            <i class="fas fa-star fs-3"></i>
+                        </div>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">99%</h2>
+                        <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Client Satisfaction</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card hover-secondary p-4 p-lg-5 rounded-4 bg-white h-100 text-center" style="border: 1px solid rgba(139, 92, 246, 0.1);">
+                        <div class="mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: linear-gradient(135deg, rgba(244, 63, 94, 0.1), rgba(244, 63, 94, 0.2)); color: var(--secondary-color);">
+                            <i class="fas fa-headset fs-3"></i>
+                        </div>
+                        <h2 class="fw-bolder text-gradient mb-2" style="font-size: clamp(2.5rem, 8vw, 3.5rem);">24/7</h2>
+                        <p class="text-muted fw-bold text-uppercase small mb-0" style="letter-spacing: 1px;">Dedicated Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Featured Projects / Portfolio Snippet -->
+    <section class="py-5 bg-white position-relative">
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <div class="d-inline-block mb-3">
+                    <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">OUR WORK</span>
+                </div>
+                <h2 class="display-5 fw-bold mb-3">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="text-muted fs-6 mx-auto" style="max-width: 600px;">A glimpse into our successful corporate transformations and intelligent digital solutions.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item h-100 mb-0 shadow-lg" style="border: 1px solid rgba(139,92,246,0.2); min-height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="portfolio-img h-100 w-100 object-fit-cover" style="min-height: 350px;" alt="Finance">
+                        <div class="portfolio-overlay p-4 justify-content-end text-start">
+                            <span class="badge rounded-pill bg-white text-primary mb-2 align-self-start fw-bold px-3 py-2 shadow-sm">Finance</span>
+                            <h4 class="fw-bold fs-3 mb-1">FinTech Ecosystem</h4>
+                            <p class="mb-0 text-white opacity-75 fw-normal small">Complete overhaul of digital banking infrastructure for a global tier-1 bank.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item h-100 mb-0 shadow-lg" style="border: 1px solid rgba(244,63,94,0.2); min-height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" class="portfolio-img h-100 w-100 object-fit-cover" style="min-height: 350px;" alt="Analytics">
+                        <div class="portfolio-overlay p-4 justify-content-end text-start">
+                            <span class="badge rounded-pill bg-white text-secondary mb-2 align-self-start fw-bold px-3 py-2 shadow-sm">Analytics</span>
+                            <h4 class="fw-bold fs-3 mb-1">Data Visualization</h4>
+                            <p class="mb-0 text-white opacity-75 fw-normal small">Real-time enterprise data tracking platform for international logistics.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item h-100 mb-0 shadow-lg" style="border: 1px solid rgba(139,92,246,0.2); min-height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80" class="portfolio-img h-100 w-100 object-fit-cover" style="min-height: 350px;" alt="AI">
+                        <div class="portfolio-overlay p-4 justify-content-end text-start">
+                            <span class="badge rounded-pill bg-white text-dark mb-2 align-self-start fw-bold px-3 py-2 shadow-sm">AI</span>
+                            <h4 class="fw-bold fs-3 mb-1">AI Automation</h4>
+                            <p class="mb-0 text-white opacity-75 fw-normal small">Integrating intelligent machine learning models into daily corporate tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 pt-3" data-aos="fade-up" data-aos-delay="400">
+                <a href="portfolio.html" class="btn-custom rounded-pill px-5">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Why Choose Us -->
+    <section class="py-5 bg-light-alt position-relative overflow-hidden">
+        <!-- Decorative bg glow -->
+        <div class="position-absolute top-0 start-0 translate-middle rounded-circle d-none d-lg-block" style="width: 500px; height: 500px; background: var(--primary-color); filter: blur(150px); opacity: 0.1; z-index: 0;"></div>
+        
+        <div class="container position-relative z-1">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1" data-aos="fade-right">
+                    <div class="d-inline-block mb-3">
+                        <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">OUR ADVANTAGE</span>
+                    </div>
+                    <h2 class="fw-bold mb-4 lh-sm text-dark" style="font-size: clamp(2rem, 5vw, 3rem);">Why partner with <span class="text-gradient">Stackly?</span></h2>
+                    <p class="text-muted mb-5 fs-6 lh-lg" style="max-width: 550px;">We bring a unique combination of deep industry expertise, cutting-edge technological capabilities, and an uncompromising commitment to delivering tangible, scalable results.</p>
+                    
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Advantage 1 -->
+                        <div class="d-flex align-items-center p-3 p-sm-4 rounded-4 shadow-sm bg-white" style="border: 1px solid rgba(139,92,246,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle text-white me-3 me-sm-4 shadow-sm flex-shrink-0" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                                <i class="fas fa-lightbulb fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark fs-5">Innovative Approach</h5>
+                                <p class="text-muted small mb-0 lh-base">We don't just follow industry trends; we architect them using next-generation technology.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Advantage 2 -->
+                        <div class="d-flex align-items-center p-3 p-sm-4 rounded-4 shadow-sm bg-white" style="border: 1px solid rgba(139,92,246,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle text-white me-3 me-sm-4 shadow-sm flex-shrink-0" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                                <i class="fas fa-users-cog fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark fs-5">Elite Engineering Team</h5>
+                                <p class="text-muted small mb-0 lh-base">Our tier-1 developers and strategists bring decades of combined enterprise experience.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Advantage 3 -->
+                        <div class="d-flex align-items-center p-3 p-sm-4 rounded-4 shadow-sm bg-white" style="border: 1px solid rgba(139,92,246,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle text-white me-3 me-sm-4 shadow-sm flex-shrink-0" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                                <i class="fas fa-chart-line fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark fs-5">Result-Oriented Strategy</h5>
+                                <p class="text-muted small mb-0 lh-base">Every single system we integrate is meticulously designed to drive measurable ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="position-relative">
+                        <!-- Glowing blob behind image -->
+                        <div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 80%; height: 80%; background: var(--secondary-color); filter: blur(60px); opacity: 0.2; z-index: 0;"></div>
+                        
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Why Choose Us" class="img-fluid rounded-4 shadow-lg position-relative z-1" style="border: 1px solid rgba(255,255,255,0.8);">
+                        
+                        <!-- Play button overlay with Pulse Animation -->
+                        <div class="position-absolute top-50 start-50 translate-middle z-2">
+                            <a href="#" class="btn rounded-circle shadow-lg d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; border: 3px solid rgba(255,255,255,0.5); box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7); animation: pulse-ring 2s infinite cubic-bezier(0.66, 0, 0, 1);">
+                                <i class="fas fa-play fs-4 ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Testimonials (Swiper) -->
+    <section class="py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); padding: 100px 0;">
+        <div class="container position-relative z-1 mb-5">
+            <div class="section-title text-center text-white" data-aos="fade-up">
+                <div class="d-inline-block mb-3">
+                    <span class="badge rounded-pill fw-bold px-3 py-2 text-white" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.2);">TESTIMONIALS</span>
+                </div>
+                <h2 class="fw-bold text-white mb-3" style="font-size: clamp(2rem, 5vw, 3rem);">What Our <span class="fw-bolder" style="color: #ffd700;">Clients Say</span></h2>
+                <p class="text-white opacity-75 fs-6 mx-auto" style="max-width: 600px;">Hear directly from the enterprise leaders who have experienced the Stackly difference.</p>
+            </div>
+        </div>
+        
+        <!-- Swiper Container - spans full width with overflow visible -->
+        <div class="container-fluid px-0">
+            <div class="swiper testimonial-swiper" style="padding-bottom: 20px;">
+                <div class="swiper-wrapper">
+                    
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="card border-0 rounded-4 p-4 h-100 shadow-sm mx-2" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2) !important;">
+                            <div class="card-body d-flex flex-column p-0">
+                                <div class="mb-3 text-warning fs-5">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="fst-italic text-white mb-4 fs-6 lh-lg flex-grow-1">"Stackly completely transformed our operational workflow. Their strategic insights saved us millions in the first year alone. The ROI is staggering."</p>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Client 1" class="rounded-circle me-3 border border-2 border-white shadow-sm" style="width: 55px; height: 55px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="fw-bold mb-0 text-white">Robert Chen</h6>
+                                        <small class="text-white-50 fw-bold">CEO, Global Logistics</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="card border-0 rounded-4 p-4 h-100 shadow-sm mx-2" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2) !important;">
+                            <div class="card-body d-flex flex-column p-0">
+                                <div class="mb-3 text-warning fs-5">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="fst-italic text-white mb-4 fs-6 lh-lg flex-grow-1">"The elite team at Stackly delivered a phenomenal digital platform that exceeded all our expectations. Truly a top-tier consultancy firm."</p>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Client 2" class="rounded-circle me-3 border border-2 border-white shadow-sm" style="width: 55px; height: 55px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="fw-bold mb-0 text-white">Sarah Jenkins</h6>
+                                        <small class="text-white-50 fw-bold">CTO, HealthTech Inc.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="card border-0 rounded-4 p-4 h-100 shadow-sm mx-2" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2) !important;">
+                            <div class="card-body d-flex flex-column p-0">
+                                <div class="mb-3 text-warning fs-5">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="fst-italic text-white mb-4 fs-6 lh-lg flex-grow-1">"Their innovative approach to our legacy system modernization was flawless. Zero downtime, perfectly executed. Absolute professionals."</p>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="Client 3" class="rounded-circle me-3 border border-2 border-white shadow-sm" style="width: 55px; height: 55px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="fw-bold mb-0 text-white">Michael Ross</h6>
+                                        <small class="text-white-50 fw-bold">Director, Finance Corp</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="card border-0 rounded-4 p-4 h-100 shadow-sm mx-2" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2) !important;">
+                            <div class="card-body d-flex flex-column p-0">
+                                <div class="mb-3 text-warning fs-5">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="fst-italic text-white mb-4 fs-6 lh-lg flex-grow-1">"The best strategic investment we made this year. Stackly's data analytics dashboards gave us insights we didn't even know were possible."</p>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Client 4" class="rounded-circle me-3 border border-2 border-white shadow-sm" style="width: 55px; height: 55px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="fw-bold mb-0 text-white">Elena Smith</h6>
+                                        <small class="text-white-50 fw-bold">VP Operations, RetailX</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Pricing Snippet -->
+    <section class="py-5 bg-white position-relative overflow-hidden">
+        <!-- Decorative Glow -->
+        <div class="position-absolute top-50 start-50 translate-middle rounded-circle d-none d-lg-block" style="width: 800px; height: 800px; background: rgba(139, 92, 246, 0.05); filter: blur(100px); z-index: 0;"></div>
+        
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <div class="d-inline-block mb-3">
+                    <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">PLANS</span>
+                </div>
+                <h2 class="display-5 fw-bold mb-3">Transparent <span class="text-gradient">Solutions</span></h2>
+                <p class="text-muted fs-6 mx-auto" style="max-width: 600px;">Choose the right corporate tier for your organizational needs. No hidden fees, completely scalable.</p>
+            </div>
+            
+            <div class="row g-4 align-items-center justify-content-center">
+                <!-- Tier 1 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-1">Starter</h4>
+                            <p class="text-muted small">For small teams & startups</p>
+                        </div>
+                        <div class="price-value fw-bolder mb-4 text-dark" style="font-size: clamp(2.5rem, 6vw, 3.5rem);">$49<span class="fs-5 text-muted fw-normal">/mo</span></div>
+                        <ul class="list-unstyled text-start mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Basic Analytics Dashboard</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Email Support</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Up to 5 Users</li>
+                            <li class="mb-3 text-muted"><i class="fas fa-times me-2 opacity-50"></i> Custom Integration</li>
+                            <li class="text-muted"><i class="fas fa-times me-2 opacity-50"></i> Priority Support</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-outline-custom w-100 rounded-pill py-3 fw-bold mt-auto">Start Free Trial</a>
+                    </div>
+                </div>
+                <!-- Tier 2 (Popular) -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Premium Colorful Card -->
+                    <div class="pricing-card popular border-0 h-100 d-flex flex-column" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); box-shadow: 0 20px 50px -10px rgba(139, 92, 246, 0.4);">
+                        <div class="pricing-badge shadow-sm" style="background: white !important; color: var(--primary-color) !important;">POPULAR</div>
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-1 text-white">Professional</h4>
+                            <p class="text-white opacity-75 small">For growing businesses</p>
+                        </div>
+                        <div class="price-value fw-bolder mb-4 text-white" style="font-size: clamp(2.5rem, 6vw, 3.5rem);">$99<span class="fs-5 text-white opacity-75 fw-normal">/mo</span></div>
+                        <ul class="list-unstyled text-start mb-4 text-white flex-grow-1">
+                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i> Advanced AI Analytics</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i> 24/7 Priority Support</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i> Up to 20 Users</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i> Custom Integration</li>
+                            <li><i class="fas fa-check-circle text-warning me-2"></i> Dedicated Account Manager</li>
+                        </ul>
+                        <a href="pricing.html" class="btn bg-white w-100 rounded-pill py-3 fw-bold shadow-sm mt-auto" style="color: var(--primary-color); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Get Started Now</a>
+                    </div>
+                </div>
+                <!-- Tier 3 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-1">Enterprise</h4>
+                            <p class="text-muted small">For large organizations</p>
+                        </div>
+                        <div class="price-value fw-bolder mb-4 text-dark" style="font-size: clamp(2.5rem, 6vw, 3.5rem);">$299<span class="fs-5 text-muted fw-normal">/mo</span></div>
+                        <ul class="list-unstyled text-start mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Full Custom Suite</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 24/7 Dedicated Support</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Unlimited Users</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> API Access & Webhooks</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> On-premise Deployment</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-outline-custom w-100 rounded-pill py-3 fw-bold mt-auto">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 11: Blog Snippet -->
+    <section class="py-5 bg-light-alt position-relative overflow-hidden">
+        <div class="container position-relative z-1">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-end mb-5" data-aos="fade-up">
+                <div class="text-center text-md-start mb-4 mb-md-0">
+                    <div class="d-inline-block mb-3">
+                        <span class="badge rounded-pill fw-bold px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); border: 1px solid rgba(139, 92, 246, 0.2);">INSIGHTS</span>
+                    </div>
+                    <h2 class="fw-bold mb-0 lh-sm" style="font-size: clamp(2rem, 5vw, 3rem);">Latest <span class="text-gradient">Articles</span></h2>
+                </div>
+                <a href="blog.html" class="btn btn-outline-custom rounded-pill px-4 d-none d-md-inline-block fw-bold shadow-sm">View All News <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Article 1 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden bg-white text-decoration-none d-block" style="border: 1px solid rgba(139,92,246,0.1) !important; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px -10px rgba(139, 92, 246, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
+                        <div class="position-relative overflow-hidden" style="height: 220px;">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" class="w-100 h-100 object-fit-cover" alt="Blog" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <!-- Frosted Glass Date Badge -->
+                            <div class="position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.5);">
+                                <span class="fw-bold text-dark small"><i class="far fa-calendar-alt text-primary me-1"></i> Aug 24</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge rounded-pill mb-3 align-self-start shadow-sm px-3 py-2" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color);">Strategy</span>
+                            <h5 class="card-title fw-bold text-dark lh-base mb-3"><a href="blog.html" class="text-dark text-decoration-none stretched-link">How AI is Reshaping Corporate Strategy</a></h5>
+                            <p class="card-text text-muted small lh-lg flex-grow-1">Discover the intelligent machine learning tools top executives are actively using to stay ahead of the competitive curve.</p>
+                            
+                            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-2 object-fit-cover shadow-sm" style="width: 35px; height: 35px;" alt="Author">
+                                <span class="text-muted small fw-bold">Sarah Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden bg-white text-decoration-none d-block" style="border: 1px solid rgba(139,92,246,0.1) !important; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px -10px rgba(244, 63, 94, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
+                        <div class="position-relative overflow-hidden" style="height: 220px;">
+                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" class="w-100 h-100 object-fit-cover" alt="Blog" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <!-- Frosted Glass Date Badge -->
+                            <div class="position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.5);">
+                                <span class="fw-bold text-dark small"><i class="far fa-calendar-alt text-secondary me-1"></i> Aug 20</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge rounded-pill mb-3 align-self-start shadow-sm px-3 py-2" style="background: rgba(244, 63, 94, 0.1); color: var(--secondary-color);">Management</span>
+                            <h5 class="card-title fw-bold text-dark lh-base mb-3"><a href="blog.html" class="text-dark text-decoration-none stretched-link">The Future of Remote Workforces</a></h5>
+                            <p class="card-text text-muted small lh-lg flex-grow-1">Building deep organizational culture and maintaining high productivity outputs in an increasingly hybrid world.</p>
+                            
+                            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-2 object-fit-cover shadow-sm" style="width: 35px; height: 35px;" alt="Author">
+                                <span class="text-muted small fw-bold">Robert Chen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden bg-white text-decoration-none d-block" style="border: 1px solid rgba(139,92,246,0.1) !important; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px -10px rgba(139, 92, 246, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
+                        <div class="position-relative overflow-hidden" style="height: 220px;">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" class="w-100 h-100 object-fit-cover" alt="Blog" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <!-- Frosted Glass Date Badge -->
+                            <div class="position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.5);">
+                                <span class="fw-bold text-dark small"><i class="far fa-calendar-alt text-dark me-1"></i> Aug 15</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge rounded-pill mb-3 align-self-start shadow-sm px-3 py-2 bg-dark text-white">Finance</span>
+                            <h5 class="card-title fw-bold text-dark lh-base mb-3"><a href="blog.html" class="text-dark text-decoration-none stretched-link">Navigating Global Market Shifts</a></h5>
+                            <p class="card-text text-muted small lh-lg flex-grow-1">The absolutely critical economic indicators to watch closely as the global enterprise economy rapidly transitions.</p>
+                            
+                            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-2 object-fit-cover shadow-sm" style="width: 35px; height: 35px;" alt="Author">
+                                <span class="text-muted small fw-bold">Michael Ross</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 pt-2 d-md-none" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-outline-custom rounded-pill px-4 fw-bold shadow-sm w-100">View All News <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Footer -->
+    <div id="footer-placeholder"></div>            
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

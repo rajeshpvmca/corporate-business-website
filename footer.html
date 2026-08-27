@@ -1,4 +1,4 @@
-﻿<footer class="footer position-relative overflow-hidden" style="background: var(--dark-bg); padding: 100px 0 30px;">
+﻿<footer class="footer position-relative overflow-hidden" style="background: var(--dark-bg); padding: 80px 0 30px;">
     <!-- Glowing Ambient Orbs -->
     <div class="position-absolute bottom-0 start-0 translate-middle rounded-circle" style="width: 400px; height: 400px; background: var(--primary-color); filter: blur(150px); opacity: 0.15; z-index: 0;"></div>
     <div class="position-absolute top-0 end-0 translate-middle rounded-circle" style="width: 300px; height: 300px; background: var(--secondary-color); filter: blur(120px); opacity: 0.15; z-index: 0;"></div>
@@ -7,29 +7,12 @@
     <div class="position-absolute top-0 start-0 w-100" style="height: 2px; background: linear-gradient(90deg, transparent, var(--primary-color), var(--secondary-color), transparent); opacity: 0.7;"></div>
 
     <div class="container position-relative z-1">
-        <!-- Pre-footer Newsletter Banner -->
-        <div class="row mb-5 pb-5 border-bottom" style="border-color: rgba(255,255,255,0.1) !important;">
-            <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start" >
-                <h3 class="fw-bold text-white mb-2" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">Subscribe to our <span class="text-gradient">Newsletter</span></h3>
-                <p class="text-light opacity-75 mb-0">Get the latest business insights, exclusive offers, and tech news.</p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center"  >
-                <form class="w-100">
-                    <div class="input-group input-group-lg shadow-lg p-2 rounded-pill" style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
-                        <input type="email" class="form-control bg-transparent border-0 text-white shadow-none px-4" placeholder="Enter your email address" aria-label="Email" style="color: white !important;">
-                        <button onclick="window.location.href='404.html'; return false;" class="btn btn-primary rounded-pill px-4 px-md-5 fw-bold" type="button" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border: none;">Subscribe <i class="fas fa-paper-plane ms-2 d-none d-sm-inline"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
         <div class="row g-4 mb-4">
             <!-- Brand Section -->
-            <div class="col-12 col-lg-4 mb-4 mb-lg-0 text-center text-lg-start pe-lg-5"  >
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0 text-center text-lg-start pe-lg-4">
                 <a class="navbar-brand position-relative" style="z-index: 1060;" href="404.html">
-            <div style="-webkit-mask: url('assets/images/logoStackly.webp') no-repeat center left; -webkit-mask-size: contain; mask: url('assets/images/logoStackly.webp') no-repeat center left; mask-size: contain; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); width: 140px; height: 40px;"
-                aria-label="Stackly Logo"></div>
-        </a>
+                    <div style="-webkit-mask: url('assets/images/logoStackly.webp') no-repeat center left; -webkit-mask-size: contain; mask: url('assets/images/logoStackly.webp') no-repeat center left; mask-size: contain; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); width: 140px; height: 40px;" aria-label="Stackly Logo"></div>
+                </a>
                 <p class="text-light opacity-75 mb-4 mx-auto mx-lg-0" style="max-width: 350px; line-height: 1.8;">Leading the digital transformation of modern enterprises globally. We build scalable solutions for the future.</p>
                 <div class="social-links d-flex justify-content-center justify-content-lg-start">
                     <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
@@ -39,34 +22,39 @@
                 </div>
             </div>
 
-            <!-- Links Sections -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mb-sm-0 text-center text-sm-start"  >
-                <h5 class="footer-title">Company</h5>
-                <ul class="footer-links">
-                    <li><a href="404.html">About Us</a></li>
-                    <li><a href="404.html">Our Team</a></li>
-                    <li><a href="404.html">Portfolio</a></li>
-                    <li><a href="404.html">Careers <span class="badge rounded-pill ms-2 small" style="background: rgba(139, 92, 246, 0.2); color: #c4b5fd; font-size: 0.65rem;">WE'RE HIRING</span></a></li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mb-sm-0 text-center text-sm-start"  >
-                <h5 class="footer-title">Resources</h5>
-                <ul class="footer-links">
-                    <li><a href="404.html">Services</a></li>
-                    <li><a href="404.html">Pricing Plans</a></li>
-                    <li><a href="404.html">Blog Insights</a></li>
-                    <li><a href="404.html">Help & FAQ</a></li>
+            <!-- Quick Links -->
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mb-sm-0 text-center text-sm-start">
+                <h5 class="footer-title text-white mb-3 fw-bold">Quick Links</h5>
+                <ul class="footer-links list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-light opacity-75 text-decoration-none hover-primary transition">Home</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-light opacity-75 text-decoration-none hover-primary transition">About</a></li>
+                    <li class="mb-2"><a href="services.html" class="text-light opacity-75 text-decoration-none hover-primary transition">Services</a></li>
+                    <li class="mb-2"><a href="portfolio.html" class="text-light opacity-75 text-decoration-none hover-primary transition">Portfolio</a></li>
+                    <li class="mb-2"><a href="blog.html" class="text-light opacity-75 text-decoration-none hover-primary transition">Blog</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-light opacity-75 text-decoration-none hover-primary transition">Contact</a></li>
                 </ul>
             </div>
             
-            <div class="col-12 col-md-4 col-lg-4 text-center text-md-start"  >
-                <h5 class="footer-title">Contact Office</h5>
+            <!-- Contact Office -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-sm-0 text-center text-sm-start">
+                <h5 class="footer-title text-white mb-3 fw-bold">Contact Office</h5>
                 <ul class="footer-links list-unstyled text-light opacity-75">
-                    <li class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start"><i class="fas fa-map-marker-alt me-3" style="color: var(--primary-color);"></i> 123 Tech Avenue, Silicon Valley, CA 94025</li>
-                    <li class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start"><i class="fas fa-phone-alt me-3" style="color: var(--primary-color);"></i> +1 (800) 123-4567</li>
-                    <li class="d-flex align-items-center justify-content-center justify-content-md-start"><i class="fas fa-envelope me-3" style="color: var(--primary-color);"></i> hello@stackly.com</li>
+                    <li class="mb-3 d-flex align-items-center justify-content-center justify-content-sm-start"><i class="fas fa-map-marker-alt me-3" style="color: var(--primary-color);"></i> 123 Tech Avenue, CA 94025</li>
+                    <li class="mb-3 d-flex align-items-center justify-content-center justify-content-sm-start"><i class="fas fa-phone-alt me-3" style="color: var(--primary-color);"></i> +1 (800) 123-4567</li>
+                    <li class="d-flex align-items-center justify-content-center justify-content-sm-start"><i class="fas fa-envelope me-3" style="color: var(--primary-color);"></i> hello@stackly.com</li>
                 </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-12 col-lg-3 text-center text-lg-start">
+                <h5 class="footer-title text-white mb-3 fw-bold">Newsletter</h5>
+                <p class="text-light opacity-75 small mb-3">Get the latest business insights and tech news.</p>
+                <form action="404.html" class="w-100">
+                    <div class="input-group shadow-sm p-1 rounded-pill" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                        <input type="email" class="form-control bg-transparent border-0 text-white shadow-none px-3 small" placeholder="Email address" aria-label="Email" required style="color: white !important;">
+                        <button  class="btn btn-primary rounded-pill px-3 fw-bold small" type="submit" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border: none;"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -86,8 +74,10 @@
     <style>
         .hover-primary:hover { color: var(--secondary-color) !important; opacity: 1 !important; }
         .transition { transition: all 0.3s ease; }
+        
+        .input-group input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
     </style>
 </footer>
-
-
 

@@ -1,19 +1,9 @@
-/**
+﻿/**
  * Main JavaScript File
  * Initializes AOS and Swiper.js
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Initialize AOS (Animate on Scroll)
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 800,
-            easing: 'slide',
-            once: true,
-            offset: 50
-        });
-    }
 
     // Initialize Swiper for Hero Section
     if (typeof Swiper !== 'undefined' && document.querySelector('.hero-swiper')) {
@@ -120,3 +110,37 @@ document.addEventListener('DOMContentLoaded', function() {
     loadComponents();
 });
 
+
+/**
+ * Preloader and AOS Initialization
+ * Runs after all assets (images, scripts, etc.) have fully loaded.
+ */
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    function initAOS() {
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                easing: 'slide',
+                once: true,
+                offset: 50
+            });
+        }
+    }
+
+    if (preloader) {
+        // Wait a short duration to show off the cool preloader, then fade it out
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            
+            // Wait for fade transition to finish before initializing AOS and triggering animations
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                initAOS();
+            }, 600);
+        }, 800);
+    } else {
+        initAOS();
+    }
+});

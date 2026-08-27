@@ -697,3 +697,165 @@ a:hover .transition-transform {
 
 
 
+
+/* =========================================
+   Global 320px Button Responsiveness
+========================================= */
+@media (max-width: 576px) {
+  /* Force major Call-To-Action buttons to stack neatly full-width on mobile */
+  a.btn-custom, a.btn-outline-custom, button.btn-custom, button.btn-outline-custom,
+  a.btn:not(.rounded-circle):not(.btn-sm):not(.filter-btn):not(.dropdown-toggle):not(.page-link),
+  button.btn:not(.rounded-circle):not(.btn-sm):not(.navbar-toggler):not(.accordion-button):not(.dropdown-toggle) {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 12px !important;
+    padding: 12px 1.5rem !important;
+    white-space: normal !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Ensure parent containers that relied on inline buttons don't have weird spacing */
+  .input-group > .btn {
+    width: auto !important;
+    margin-bottom: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  /* Prevent hero content from hiding under the fixed navbar on mobile */
+  .hero-content {
+    margin-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Fix Hero Section Centering and Navbar Overlap on Mobile/Tablet */
+  .hero-swiper .swiper-slide {
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+    box-sizing: border-box !important;
+  }
+  .hero-content {
+    margin-top: 0 !important; /* Reset previous margin fix */
+  }
+  
+  /* Fix Title Size for 425px specifically */
+  .hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Ensure paragraph text is readable and not too wide */
+  .hero-content p {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 2rem !important;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Bulletproof Hero Mobile Fix: Force content to start exactly below the navbar */
+  .hero-swiper .swiper-slide {
+    align-items: flex-start !important;
+    padding-top: 130px !important; /* Navbar height + safe gap */
+  }
+  
+  /* Reduce huge text sizes even further for 320px */
+  .hero-content h1 {
+    font-size: clamp(2rem, 10vw, 2.8rem) !important; 
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Ensure paragraph fits compactly */
+  .hero-content p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* =========================================
+   Modern Preloader
+========================================= */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--light-bg);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.6s cubic-bezier(0.86, 0, 0.07, 1), visibility 0.6s;
+}
+
+.preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-content {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
+    animation: spin-loader 1.5s linear infinite;
+}
+
+.loader-circle-inner {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left-color: var(--secondary-color);
+    border-right-color: var(--primary-color);
+    animation: spin-reverse-loader 1s linear infinite;
+}
+
+.loader-logo {
+    font-size: 1.5rem;
+    animation: pulse-loader 1.5s ease-in-out infinite;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes spin-loader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-loader {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse-loader {
+    0%, 100% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
